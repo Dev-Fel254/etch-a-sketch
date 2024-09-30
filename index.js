@@ -16,8 +16,8 @@ document.body.appendChild(btn);
         const gridSize = parseInt(size*size);
         console.log(gridSize);
         
-        //This ensures the grid takes input between 1 and 31
-        if(Number(gridSize) && gridSize > 0 && gridSize<= 1000){
+        //This ensures the grid takes input between 1 and 64
+        if(Number(gridSize) && gridSize > 0 && gridSize<= 4096){
             for(let i=1; i<=gridSize; i++){
                     const myDivs = document.createElement("div");
                     myDivs.className = "grid-item";
@@ -28,7 +28,7 @@ document.body.appendChild(btn);
                         });
                 }
             }else{
-                alert("Please enter a number in this range (1-31).");
+                alert("Please enter a number in this range (1-64).");
         }
     });
     
