@@ -8,6 +8,12 @@ body{
     gap: 2%;
     padding: 20px;
 }
+h1{
+    color: #fff;
+}
+button{
+    margin: 10px;
+}
 div{
     box-sizing: border-box;
 }
