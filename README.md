@@ -1,1 +1,2 @@
 Etch A Sketch project
+This project allows users to dynamically generate a grid of customizable size using Flexbox layout. The grid items change color on hover, providing an interactive experience similar to an etch-a-sketch. The user can specify the number of rows and columns, and the grid will automatically adjust to fit within the container.
