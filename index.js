@@ -18,9 +18,12 @@ document.body.appendChild(btn);
         
         //This ensures the grid takes input between 1 and 64
         if(Number(gridSize) && gridSize > 0 && gridSize<= 4096){
+            //Adjust grid-item width dynamically using calc()
+                const itemWidth = `calc(100% / ${size})`;
             for(let i=1; i<=gridSize; i++){
                     const myDivs = document.createElement("div");
                     myDivs.className = "grid-item";
+                    myDivs.style.flexBasis = itemWidth;
                     myDivs.innerText = i;
                     document.getElementById('demo').appendChild(myDivs);
                     myDivs.addEventListener("mouseover", ()=>{
